@@ -1,3 +1,4 @@
+sudo: false
 language: c
 addons:
   apt:
@@ -5,4 +6,7 @@ addons:
       - libpcap-dev
       - libssl-dev
       - libnetfilter-queue-dev
-script: make 
+script: make
+os:
+  - linux
+  - osx
