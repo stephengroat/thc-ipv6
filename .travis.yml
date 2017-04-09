@@ -5,4 +5,4 @@ addons:
       - libpcap-dev
       - libssl-dev
       - libnetfilter-queue-dev
-script: make
+script: make 
