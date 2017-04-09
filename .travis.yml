@@ -1,0 +1,8 @@
+language: c
+addons:
+  apt:
+    packages:
+      - libpcap-dev
+      - libssl-dev
+      - libnetfilter-queue-dev
+script: make
