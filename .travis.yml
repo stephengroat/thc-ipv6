@@ -6,6 +6,7 @@ addons:
       - libpcap-dev
       - libssl-dev
       - libnetfilter-queue-dev
+before_script: if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install openssl; fi
 script: make
 os:
   - linux
