@@ -12,7 +12,11 @@
 #define _THC_IPV6_H
 
 #include <pcap.h>
+#if defined(__APPLE__)
+#include <machine/endian.h>
+#else
 #include <endian.h>
+#endif
 #ifdef _HAVE_SSL
   #include <openssl/rsa.h>
 #endif
